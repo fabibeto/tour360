@@ -1,0 +1,339 @@
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+} 
+
+.container {  
+    width: 100vw;
+    height: 100vh; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.2fr;
+    gap:5px;
+    grid-template-areas:
+      "header header header"
+      "section1 section1 section1"
+      "logo section2 section2"
+      "footer footer footer";
+  }
+
+  .slide{
+    margin-top:100px;
+    /* width:400px;
+    height:250px; */
+    margin-left: 300px;
+  }
+  
+  header{
+    grid-area: header;
+    height: 45px;
+    background-color:#2b3035;
+  }
+  
+  header nav ul span
+  {
+    color: #eceff7;
+    text-align: left;
+    margin-right: 100px;
+  }
+  
+  .section1{
+    grid-area: section1;
+    margin-top: 25px;
+    justify-self:center;
+  } 
+  
+  .logo{
+    grid-area: logo;
+    align-self: center; /*Alineación en el eje vertical(hijo)*/
+    justify-self:center;/*Alineación en el eje horizontal(hijo)*/
+    background-color:#eceff7;
+  }
+  
+  .section2{
+    grid-area: section2;
+    background-color:#eceff7;
+    padding:25px;
+    line-height: 1.8; /*Espacio entre lineas*/
+    justify-self: center;
+    margin: 25px;
+  }
+  .section2 h2{
+    text-align: center;
+  }
+  
+  .pie{
+    grid-area: footer;
+    width: 100%;
+    color: aliceblue;
+    background-color:#2b3035;
+    line-height: 1.8;
+    padding: 50px;
+    text-align: center;
+  }
+
+/* Saco los puntos de los items y centro el menu */
+.menu{
+    list-style-type: none;
+    text-align:center;
+    padding:10px 10px;
+    margin: 0px;
+}
+.menu li{
+    display: inline-block;
+}
+
+/* Saco el subrayado de los items */
+.menu li a{
+color: aliceblue;
+padding: 10px;
+margin: 10px;
+text-decoration: none;
+}
+li{
+    display:inline;
+    text-align: center;
+}
+.redes{
+    color: aliceblue;
+    margin-left: 120px;
+}
+
+/* TABLET */
+@media screen and (max-width:768px){ 
+  .container {  
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.2fr;
+    gap:3px;
+    grid-template-areas:
+      "header"
+      "section1"
+      "logo"
+      "section2"
+      "footer";
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width:420px){ 
+  .container {  
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.5fr 1fr 2fr;
+    gap:1px;
+    grid-template-areas:
+      "header"
+      "section2"
+      "footer";
+  }
+}
+/* *****************QUIENES SOMOS***************** */
+.container_quienes_somos{
+  background-color:#eceff7;
+}
+.quienes_somos{
+  display: flex;
+  flex-direction: column;
+}
+.quienes_somos h2{
+  margin-top: 70px;
+  text-align:center;
+  padding: 25px; 
+}
+.quienes_somos .video{
+  text-align: center;
+}
+.iglesia{
+  display: none;
+}
+.contenido{
+  padding: 25px;
+  margin: 50px;
+  line-height: 1.8; /*Espacio entre lineas*/
+}
+
+@media screen and (max-width:768px){ 
+  .quienes_somos h2{
+    margin-top: 50px;
+    text-align:center;
+    padding: 25px;
+  }
+  .quienes_somos .video{
+    display: none;
+  }
+  .iglesia{
+    text-align: center;
+    display: block;
+  }
+  .contenido{    
+    line-height: 1.2; /*Espacio entre lineas*/
+  }
+}
+
+@media screen and (max-width:420px){ ************************
+  .quienes_somos h2{
+    text-align:center;
+  }
+  .quienes_somos .video{
+    display: none;
+  }
+  .iglesia{
+    display: none;
+  }
+  .contenido{   
+    line-height: 1.1; /*Espacio entre lineas*/
+  }
+}
+/* *****************SERVICIOS***************** */
+.container_servicios{
+  margin-top: 100px;
+  /* background-color:rgb(142, 161, 246);  */
+  width: 100%;
+  height: 150vh;
+}
+  .articulos_padre{
+    width: 100vw;
+    height: 120vh;
+    /* background-color: #40A578;  */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+    .uno{
+      /* background-color:#FF9F66; */
+      width: 35vw;
+      height: 50vh;
+      padding: 10px;
+    }
+    .uno h2{
+     text-align: center;
+    }
+    .imagen1{
+        /* background-color: black; */
+        width: 150px;
+    }
+    .dos{
+      /* background-color:#FDE49E; */
+      width: 35vw;
+      height: 50vh;
+      padding: 10px;
+    }
+    .dos h2{
+      text-align: center;
+    }
+    .imagen2{
+        /* background-color: black; */
+        width: 150px;
+    }
+    .span{
+      width: 100%;
+      height: 25vh;
+      background-color: #eceff7;
+    }
+    .imagen3{
+      width: 150px;
+      margin-top: 10px;
+    }
+    .tres{
+      /* background-color:#FDE49E; */
+      margin-top: 10px;
+      width: 35vw;
+      height: 50vh;
+      padding: 10px;
+    }
+      .tres h2{
+        text-align: center;
+      }
+    .imagen4{
+      width: 150px;
+    }
+    .cuatro{
+      /* background-color:#FDE49E; */
+      width: 35vw;
+      height: 50vh;
+      padding: 10px;
+    }
+     .cuatro h2{
+      text-align: center;
+     }
+
+  .pie_servicios{
+    margin-top: 35px;
+    width: 100%;
+    color: aliceblue;
+    background-color: black;
+    line-height: 1.8;
+    padding: 50px;
+    text-align: center;
+  }  
+/* *****************GALERIA***************** */    
+.container_galeria{
+  background-color: rgb(58, 60, 60);
+  margin-top: 60px;
+}
+.container-fluid h2{
+  background-color: rgb(58, 60, 60);
+  text-align: center;
+  color: #eceff7;
+  padding: 25px;
+}
+.rows{
+  margin: 10px;
+  border: double rgb(0, 0, 0) 2px;
+  margin: 5px;
+}
+.fila1 img{
+  width: 250px;
+  opacity:.4;
+}
+.fila2 img{
+  width: 250px;
+  opacity:.4;
+}
+.fila3 img{
+  width: 250px;
+  opacity:.4;
+}
+.rows:hover{
+  border:solid white 2px;
+}
+img:hover{
+  opacity: 1;
+}
+/* *****************CONTACTO***************** */
+.formulario{
+  background-color: #2b3035;
+  width: 450px;
+  margin-top: 100px;
+  margin-left: 300px;
+  padding: 50px;
+  border-radius: 5px;
+}
+.formulario h2{
+  margin:0 auto;
+  text-align: center;
+  padding: 10px;
+  color: #eceff7;
+}
+.claseNombre{
+  margin-left: 25px;
+}
+
+.pieContacto{
+    margin-top: 8px;
+    width: 100%;
+    color: aliceblue;
+    background-color:#2b3035;
+    line-height: 1.8;
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+
+
