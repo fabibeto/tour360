@@ -1,0 +1,41 @@
+.articulos_padre
+{
+    width: 100vw;
+    height: 130vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding: 5px;
+    .separador
+    {
+        margin-top: 30px;
+        width:100vh;
+        background-color: $colorEncabezadoPie;
+        padding: 3px;
+    }
+}
+   .articulo
+    {
+      flex: 1 1 auto;
+      width: 35vw;
+      height: 50vh;
+      padding:3px;
+      text-align: justify;
+    }
+    .articulo h2
+     {
+       text-align: center;
+     }
+.foto
+{ width: 120px;
+  padding: 2px;
+  text-align: center;
+}  
+  .fotoArticulo
+  {
+    width:150px;
+    height:150px;
+  }

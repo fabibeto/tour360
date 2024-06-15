@@ -1,0 +1,12 @@
+header
+{
+  grid-area: header;
+  height: 45px;
+  background-color:$colorEncabezadoPie;
+  &:nav ul span
+  {
+    color: #f7ecf1;
+    text-align: left;
+    margin-right: 100px;
+  }
+}

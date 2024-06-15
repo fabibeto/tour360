@@ -1,0 +1,32 @@
+/*TABLET*/
+@media screen and (max-width: 768px)
+{
+.articulos_padre
+  {
+   height: 90vh;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 3px;
+   padding: 5px;
+   .separador
+    {
+        margin-top: 15px;
+        width:100vh;
+        background-color: #e65d1a;
+        padding:2px;
+    }
+  }
+.articulo
+  {
+    flex: 1 1 auto;
+    width: 35vw;
+    height: 25vh;
+    padding: auto;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}

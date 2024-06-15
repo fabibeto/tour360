@@ -1,0 +1,19 @@
+.container_servicios
+{
+    margin-top: 70px;
+    width: 100vw;
+    height: 150vh;
+    h1
+    {   
+      text-align:center;
+      padding: 20px; 
+      background-color:$colorEncabezadoPie; 
+      color: #e65d1a;
+      &:hover
+      {
+        color: #eceff7;
+        background-color: #0055a5;
+      }
+    } 
+      
+}

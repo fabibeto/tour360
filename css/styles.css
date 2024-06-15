@@ -27,8 +27,10 @@ header:nav ul span {
 
 .section1 {
   grid-area: section1;
-  margin-top: 20px;
-  justify-self: center;
+  margin-top: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
 }
 
 .logo {
@@ -38,45 +40,33 @@ header:nav ul span {
   background-color: #ECEFF7;
   transform: rotate(60deg);
 }
+.logo img {
+  width: 150px;
+  height: 150px;
+}
 
 .section2 {
   grid-area: section2;
-  background-color: #eceff7;
+  background-color: #d7d9dd;
   padding: 25px;
   line-height: 1.8; /*Espacio entre lineas*/
   justify-self: center;
+  text-align: justify;
   margin: 25px;
+  border-radius: 15px;
 }
-.section2:h2 {
+.section2 h1 {
   text-align: center;
+  background-color: #2b3035;
+  color: #e65d1a;
+  border-radius: 10px;
 }
-
-/* Saco los puntos de los items y centro el menu */
-.menu {
-  list-style-type: none;
+.section2 h1:hover {
+  color: #eceff7;
+  background-color: #0055a5;
+}
+.section2 h2 {
   text-align: center;
-  padding: 10px 10px;
-  margin: 0px;
-  /* Saco el subrayado de los items */
-}
-.menu:li {
-  display: inline-block;
-}
-.menu:li a {
-  color: aliceblue;
-  padding: 10px;
-  margin: 10px;
-  text-decoration: none;
-}
-
-li {
-  display: inline;
-  text-align: center;
-}
-
-.redes {
-  color: aliceblue;
-  margin-left: 120px;
 }
 
 .pie {
@@ -86,12 +76,13 @@ li {
   line-height: 1.5;
   padding: 20px;
   text-align: center;
+  width: 100vw;
 }
 
 /* TABLET */
 @media screen and (max-width: 768px) {
   .contenedor {
-    gap: 3px;
+    gap: 2px;
     grid-template-areas: "logo logo" "section2 section2" "footer footer";
     background-color: #ECEFF7;
   }
@@ -119,7 +110,6 @@ li {
     margin-top: 50px;
   }
 }
-/* *****************QUIENES SOMOS***************** */
 .container_quienes_somos {
   background-color: #ECEFF7;
 }
@@ -132,25 +122,34 @@ li {
   display: flex;
   flex-direction: column;
 }
-.quienes_somos:h2 {
+.quienes_somos h1 {
   margin-top: 70px;
   text-align: center;
-  padding: 25px;
+  padding: 20px;
+  background-color: #2b3035;
+  color: #e65d1a;
+}
+.quienes_somos h1:hover {
+  color: #eceff7;
+  background-color: #0055a5;
 }
 
 .quienes_somos .video {
-  margin-top: 50px;
+  margin-top: 35px;
   text-align: center;
 }
 
 .salonBandera {
   display: none;
+  width: "300px";
+  height: "200px";
 }
 
 .contenido {
   padding: 25px;
-  margin: 50px;
+  margin: 40px;
   line-height: 1.8; /*Espacio entre lineas*/
+  text-align: justify;
 }
 
 /* TABLET */
@@ -166,6 +165,10 @@ li {
   .salonBandera {
     text-align: center;
     display: block;
+  }
+  .salonBandera img {
+    width: 600px;
+    height: 300px;
   }
   .contenido {
     line-height: 1.2; /*Espacio entre lineas*/
@@ -186,16 +189,25 @@ li {
     line-height: 1.1; /*Espacio entre lineas*/
   }
 }
-/* *****************SERVICIOS***************** */
 .container_servicios {
-  margin-top: 100px;
+  margin-top: 70px;
   width: 100vw;
   height: 150vh;
+}
+.container_servicios h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: #2b3035;
+  color: #e65d1a;
+}
+.container_servicios h1:hover {
+  color: #eceff7;
+  background-color: #0055a5;
 }
 
 .articulos_padre {
   width: 100vw;
-  height: 150vh;
+  height: 130vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -203,6 +215,12 @@ li {
   align-items: center;
   gap: 3px;
   padding: 5px;
+}
+.articulos_padre .separador {
+  margin-top: 30px;
+  width: 100vh;
+  background-color: #2b3035;
+  padding: 3px;
 }
 
 .articulo {
@@ -238,9 +256,10 @@ li {
   text-align: center;
 }
 
+/*TABLET*/
 @media screen and (max-width: 768px) {
   .articulos_padre {
-    height: 150vh;
+    height: 90vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -248,6 +267,12 @@ li {
     align-items: center;
     gap: 3px;
     padding: 5px;
+  }
+  .articulos_padre .separador {
+    margin-top: 15px;
+    width: 100vh;
+    background-color: #e65d1a;
+    padding: 2px;
   }
   .articulo {
     flex: 1 1 auto;
@@ -259,13 +284,25 @@ li {
     margin-bottom: 20px;
   }
 }
+/*MOBILE*/
 @media screen and (max-width: 420px) {
+  .container_servicios {
+    margin-top: 70px;
+    width: 100vw;
+    height: 170vh;
+  }
   .articulos_padre {
-    height: 120vh;
+    height: 90vh;
     justify-content: center;
     align-items: center;
     gap: 1px;
     padding: 3px;
+  }
+  .articulos_padre .separador {
+    margin-top: 5px;
+    width: 100vh;
+    background-color: #e65d1a;
+    padding: 1px;
   }
   .articulo {
     flex: 1 1 auto;
@@ -277,10 +314,9 @@ li {
     margin-bottom: 5px;
   }
 }
-/* *****************GALERIA***************** */
 .container_galeria {
   background-color: rgb(58, 60, 60);
-  margin-top: 60px;
+  margin-top: 55px;
 }
 
 .galeriaFotos {
@@ -288,24 +324,36 @@ li {
   color: #eceff7;
   padding: 30px;
 }
+.galeriaFotos h1 {
+  margin-top: -13px;
+  text-align: center;
+  padding: 20px;
+  background-color: #2b3035;
+  color: #e65d1a;
+}
+.galeriaFotos h1:hover {
+  color: #eceff7;
+  background-color: #0055a5;
+}
 
-.rows {
-  margin: 10px;
-  border: double rgb(0, 0, 0) 2px;
+.filaGaleria {
   margin: 5px;
 }
 
 .fila1 img {
+  border: double rgb(242, 242, 242);
   width: 250px;
   opacity: 0.4;
 }
 
 .fila2 img {
+  border: double rgb(242, 242, 242);
   width: 250px;
   opacity: 0.4;
 }
 
 .fila3 img {
+  border: double rgb(242, 242, 242);
   width: 250px;
   opacity: 0.4;
 }
@@ -318,7 +366,11 @@ img:hover {
   opacity: 1;
 }
 
-/* *****************CONTACTO***************** */
+.container_contacto {
+  padding: 20px;
+  background-color: #ECEFF7;
+}
+
 .container_contacto {
   padding: 20px;
   background-color: #ECEFF7;
@@ -333,16 +385,14 @@ img:hover {
   padding: 50px;
   border-radius: 5px;
 }
-
-.formulario h2 {
-  margin: 0 auto;
-  text-align: center;
-  padding: 10px;
+.formularioPadre h1 {
   color: aliceblue;
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 .claseNombre {
-  margin-left: 25px;
+  margin-left: 70px;
 }
 
 .pieContacto {

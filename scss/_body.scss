@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: $fuente;
+  }
+  .contenedor
+  {  
+    display: grid;
+    width: 100vw;
+    gap:5px;
+    grid-template-areas:
+      "section1 section1 section1 section1"
+      "logo section2 section2 section2"
+      "footer footer footer footer";
+    background-color: $colorFondo;
+  }

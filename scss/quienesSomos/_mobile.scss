@@ -1,0 +1,16 @@
+/* MOBILE */
+@media screen and (max-width:420px)
+{ 
+  .quienes_somos h2{
+    text-align:center;
+  }
+  .quienes_somos .video{
+    display: none;
+  }
+  .salonBandera{
+    display: none;
+  }
+  .contenido{   
+    line-height: 1.1; /*Espacio entre lineas*/
+  }
+}  

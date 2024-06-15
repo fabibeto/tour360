@@ -1,0 +1,50 @@
+.section1
+{
+   grid-area: section1;
+   margin-top:50px;
+   margin-left: 0;
+   margin-right: 0;
+   padding: 0;
+   // justify-self:center;
+   
+} 
+.logo
+{
+   grid-area: logo;
+   align-self: center; /*Alineación en el eje vertical(hijo)*/
+   justify-self:center;/*Alineación en el eje horizontal(hijo)*/
+   background-color:$colorFondo;
+   transform: rotate(60deg);
+   img
+   {
+      width: 150px;
+      height: 150px;
+   }
+}
+
+.section2
+{
+   grid-area: section2;
+   background-color:#d7d9dd;
+   padding:25px;
+   line-height: 1.8; /*Espacio entre lineas*/
+   justify-self: center;
+   text-align: justify;
+   margin: 25px;
+   border-radius: 15px;
+   h1{
+      text-align: center;
+      background-color:$colorEncabezadoPie;
+      color: #e65d1a;
+      border-radius: 10px;
+      &:hover
+      {
+         color: #eceff7;
+         background-color:#0055a5;
+      }
+   }
+   h2
+   {
+    text-align: center;
+   }
+}

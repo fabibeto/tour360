@@ -1,0 +1,17 @@
+.quienes_somos{
+    display: flex;
+    flex-direction: column;
+    h1
+    {
+      margin-top: 70px;
+      text-align:center;
+      padding: 20px; 
+      background-color:$colorEncabezadoPie; 
+      color: #e65d1a;
+      &:hover
+      {
+        color: #eceff7;
+        background-color: #0055a5;
+      }
+    } 
+  }

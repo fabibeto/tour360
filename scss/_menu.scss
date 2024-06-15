@@ -1,0 +1,30 @@
+/* Saco los puntos de los items y centro el menu */
+.menu
+{
+   list-style-type: none;
+   text-align:center;
+   padding:10px 10px;
+   margin: 0px; 
+   &:li
+   {
+    display: inline-block;
+   }
+   /* Saco el subrayado de los items */
+   &:li a
+   {
+    color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+   }
+}
+li
+{
+  display:inline;
+  text-align: center;
+}
+.redes
+{
+  color: aliceblue;
+  margin-left: 120px;
+}

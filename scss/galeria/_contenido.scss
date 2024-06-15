@@ -1,0 +1,46 @@
+.galeriaFotos
+{
+  // background-color: rgb(58, 60, 60);
+  text-align: center;
+  color: #eceff7;
+  padding: 30px;
+  h1
+  {
+    margin-top: -13px;
+    text-align:center;
+    padding: 20px; 
+    background-color:$colorEncabezadoPie; 
+    color: #e65d1a;
+    &:hover
+    {
+      color: #eceff7;
+      background-color: #0055a5;
+    }
+  } 
+}
+
+.filaGaleria
+{ margin: 5px;
+  
+}
+.fila1 img{
+  border: double rgb(242, 242, 242);
+  width: 250px;
+  opacity:.4;
+}
+.fila2 img{
+  border: double rgb(242, 242, 242);
+  width: 250px;
+  opacity:.4;
+}
+.fila3 img{
+  border: double rgb(242, 242, 242);
+  width: 250px;
+  opacity:.4;
+}
+.rows:hover{
+  border:solid white 2px;
+}
+img:hover{
+  opacity: 1;
+}

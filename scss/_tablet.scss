@@ -1,0 +1,25 @@
+/* TABLET */
+@media screen and (max-width:768px)
+{ 
+  .contenedor
+  {  
+    gap:2px;
+    grid-template-areas:
+      "logo logo"
+      "section2 section2"
+      "footer footer";
+    background-color: $colorFondo;
+  }
+  .logo
+  {
+    margin-top: 25px;
+  }
+  .section1
+  {
+    display: none;
+  }
+  .section2 h2
+  {
+    text-align: center;
+  }
+}

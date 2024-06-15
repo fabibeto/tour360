@@ -1,0 +1,22 @@
+/* TABLET */
+@media screen and (max-width:768px){ 
+    .quienes_somos h2{
+      margin-top: 50px;
+      text-align:center;
+      padding: 25px;
+    }
+    .quienes_somos .video{
+      display: none;
+    }
+    .salonBandera{
+      text-align: center;
+      display: block;
+      img{
+        width: 600px;
+        height: 300px;
+      }
+    }
+    .contenido{    
+      line-height: 1.2; /*Espacio entre lineas*/
+    }
+  }
